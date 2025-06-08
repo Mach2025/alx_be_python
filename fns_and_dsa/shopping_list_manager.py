@@ -2,8 +2,8 @@
 shopping_list = []
 
 def display_menu():
-    print("Shopping List Manager")  # Ensure this exists
-    print("1. Add Item")  # Ensure this exists as written
+    print("Shopping List Manager")  
+    print("1. Add Item")  
     print("2. Remove Item")
     print("3. View List")
     print("4. Exit")
@@ -18,7 +18,7 @@ def add_item():
 
 def remove_item():
     item = input("Enter the item to remove: ").strip()
-    # Convert both input and stored items to lowercase for case-insensitive matching
+    
     item_lower = item.lower()
     
     found = False
