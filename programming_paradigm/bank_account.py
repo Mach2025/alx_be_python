@@ -1,7 +1,7 @@
 # Class name
 class BankAccount:
-    def __init__(self, initial_balance = 0):
-        self.account_balance = initial_balance
+    def __init__(self, initial_balance = 0.0):
+        self.account_balance =round (float((initial_balance)) ,2)
 #Encapsulation and Behaviors
     def deposit(self, amount):
         "Add money to the account"
@@ -17,9 +17,9 @@ class BankAccount:
             return True
         return False # If theres no enough money to withdraw
     
-    def display_balance (self):
+    def display_balance(self):
         "show current balance"
-        print(f"current balance : Ksh{self.account_balance:.2f}")
+        print(f"current balance: ${self.account_balance:.2f}")
         
         
     
